@@ -9,7 +9,7 @@ function ServiceCard5() {
                 width={100}
                 height={100}
                 className="rounded-lg object-contain bg-gray-100 p-3 shadow-md"
-                src="ECM.svg"
+                src="erp.svg"
                 alt="Enterprise Content Management"
             />
             <div className="px-6 text-center">

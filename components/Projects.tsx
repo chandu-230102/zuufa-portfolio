@@ -17,7 +17,7 @@ function Projects() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 2.5 }}
             className="h-screen flex relative flex-col overflow-hidden text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
-            <h3 className="absolute top-10 left-1/2 -translate-x-1/2 md:top-24 uppercase tracking-[4px] md:tracking-[20px] text-gray-500 text-lg md:text-2xl bg-white px-3 py-1 rounded-md">Projects</h3>
+            <h3 className="absolute top-10 left-1/2 -translate-x-1/2 md:top-16 uppercase tracking-[4px] md:tracking-[20px] text-gray-500 text-lg md:text-2xl bg-white px-3 py-1 rounded-md">Projects</h3>
             <div className="relative w-full flex
            overflow-x-auto overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin">
                 {projects.map((project) => (
