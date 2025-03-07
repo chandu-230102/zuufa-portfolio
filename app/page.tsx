@@ -46,12 +46,17 @@ export default function Home() {
       </section>
       <Link href="#hero">
         <footer className="sticky bottom-3 w-full cursor-pointer">
-          <div className="flex items-center justify-center   ">
-            <Image src="zuufalogo.svg" width={0} height={50} className="w-12 h-12 rounded-full filter grayscale hover:grayscale-0 bg-black cursor-pointer" alt="logo" onClick={handlesmalllogoClick} />
+          <div className="flex items-center justify-center">
+            <Image
+              src="zuufalogo.svg"
+              width={48}
+              height={48}
+              className="w-12 h-12 md:w-14 md:h-14 rounded-full filter grayscale hover:grayscale-0 bg-black cursor-pointer"
+              alt="logo"
+              onClick={handlesmalllogoClick}
+            />
           </div>
-
         </footer>
-
       </Link>
       <motion.div
         initial={{ opacity: 0, x: -100 }}

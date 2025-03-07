@@ -28,12 +28,13 @@ const skills = [
 function Skill() {
     return (
         <motion.div
-            className="min-h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 
-                       justify-center xl:space-y-0 mx-auto items-center"
+            className="min-h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 justify-center xl:space-y-0 mx-auto items-center pt-36"
         >
-            <h3 className="absolute uppercase tracking-[20px] text-gray-500 text-2xl top-24"> Skills Stack</h3>
-            <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm">The Best in using Tech </h3>
-            <div className="grid grid-cols-6 gap-5 mt-50">
+            <div className="relative mb-10">
+                <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl">Skills Stack</h3>
+                <h3 className="uppercase tracking-[3px] text-gray-500 text-sm mt-2">The Best in using Tech</h3>
+            </div>
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-5">
                 {skills.map((skill, index) => (
                     <Skillcard key={index} imgSrc={skill} />
                 ))}
