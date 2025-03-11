@@ -3,13 +3,13 @@ import About from "@/components/About";
 import ContactMe from "@/components/ContactMe";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import Skill from "@/components/Skill";
 import Link from "next/link";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import WhyAndHow from "@/components/WhyAndHow";
 
 export default function Home() {
   const handlesmalllogoClick = () => {
@@ -22,6 +22,7 @@ export default function Home() {
   return (
     <div className="bg-#f9f9f9 text-black h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 
     scrollbar">
+
       <Header />
       <section id="hero" className="snap-start" >
         < Hero />
@@ -33,19 +34,21 @@ export default function Home() {
       <section id="services" className="snap-center">
         <Services />
       </section>
-
       <section id="techandtools" className="snap-start">
         <Skill />
       </section>
 
-      <section id="projects" className="snap-start">
-        <Projects />
+      <br></br>
+
+      <section className="snap-start">
+        <WhyAndHow />
       </section>
+
       <section id="contact" className="snap-start mt-20">
         <ContactMe />
       </section>
       <Link href="#hero">
-        <footer className="sticky bottom-3 w-full cursor-pointer">
+        <footer className=" bottom-3 w-full cursor-pointer">
           <div className="flex items-center justify-center">
             <Image
               src="zuufalogo.svg"
@@ -58,6 +61,11 @@ export default function Home() {
           </div>
         </footer>
       </Link>
+      <section className="snap-start w-full flex justify-center items-center min-h-[10vh] ">
+        <p className="text-gray-500 text-sm text-center px-4">
+          © {new Date().getFullYear()} Zuufa Pvt Ltd. All rights reserved.
+        </p>
+      </section>
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
